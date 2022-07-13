@@ -1,0 +1,108 @@
+:root{
+    --fraunces: 'Fraunces', serif;
+    --montserrat: 'Montserrat', sans-serif;   
+     --Dark-cyan: hsl(158, 36%, 37%);
+        --Cream: hsl(30, 38%, 92%);
+        --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+}
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--Cream);
+    
+}
+.card{
+    display: flex;
+    width: 350px;
+    margin: 0 auto;
+    border-radius: 15px;
+    padding-top: 0;
+    margin-top: 30px;
+    background-color: #fff;
+    flex-direction: column;
+}
+.card__img {
+    background-image: url("/images/image-product-mobile.jpg");
+    width: 100%;
+    background-size: cover;
+    height: 250px;
+    display: block;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+}
+.card__text{
+    padding: 15px 25px ;
+}
+.card__subtitle{
+    font-family: var(--montserrat);
+    font-weight: 200;
+    letter-spacing: 5px;
+    color: var(--Dark-grayish-blue);
+    margin: 10px 0;
+}
+.card__title{
+    font-family: var(--fraunces);
+    padding-bottom: 15px;
+}
+.card__paragraph{
+    font-family: var(--montserrat);
+    font-size: 14px;
+    color: var(--Dark-grayish-blue);
+    padding-bottom: 15px;
+}
+.card__prices{
+    display: flex;
+    padding-bottom: 25px;
+    
+}
+.card__price{
+    color: var(--Dark-cyan);
+    font-family: var(--fraunces);
+    padding: 0 15px;
+    
+    
+}
+.card__price2{
+    color: var(--Dark-grayish-blue);
+    margin-top: 10px;
+    text-decoration: line-through;
+    font-family: var(--montserrat);
+    font-weight: 500;
+    font-size: 15px;
+}
+.card__cta{
+    display: block;
+    text-decoration: none;
+    padding: 15px 0;
+    color: #fff;
+    background-color: var(--Dark-cyan);
+    border-radius: 10px;
+    text-align: center;
+    font-family: var(--montserrat);
+    font-weight: 700;
+}
+
+@media (min-width:768px){
+    .card{
+        border-radius: 10px;
+        width: 600px;
+        margin: 0 auto;
+        border-radius: 15px;
+        margin-top: 30px;
+        flex-direction: row;
+        margin-top: 10rem;
+    }
+    .card__img {
+        background-image: url("../images/image-product-desktop.jpg");
+        border-top-right-radius: 0;
+        border-bottom-left-radius:inherit ;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: auto;
+    }
+}
